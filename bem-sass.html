@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM ve Sass | CSS Dünyası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">CSS<span>.</span></a>
+
+    <ul class="navlinks">
+        <li><a href="css.html">CSS Nedir?</a></li>
+        <li><a href="anatomi.html">Anatomi</a></li>
+        <li><a href="box-model.html">Box Model</a></li>
+        <li><a href="layout.html">Flexbox / Grid</a></li>
+        <li><a href="responsive.html">Responsive</a></li>
+        <li><a href="renkler.html">Renkler</a></li>
+        <li><a href="pseudo.html">Pseudo</a></li>
+        <li><a href="modern.html">Modern</a></li>
+        <li><a href="animasyonlar.html">Animasyonlar</a></li>
+    </ul>
+
+    <a href="uygulama.html" class="nav-button">Laboratuvar →</a>
+</nav>
+
+<section class="hero">
+
+    <div class="container">
+
+        <a href="index.html" class="back">← Ana Sayfaya Dön</a>
+
+        <div class="eyebrow">09 / ORGANİZASYON</div>
+
+        <h1>BEM & Sass / SCSS</h1>
+
+        <p class="lead">
+            Büyük CSS projelerinde düzenli ve sürdürülebilir kod yapıları oluşturmak önemlidir.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon">B</div>
+
+                <h3>BEM</h3>
+
+                <p>
+                    BEM, CSS sınıflarını daha düzenli ve anlaşılır şekilde isimlendirmek için kullanılan bir yöntemdir.
+                </p>
+
+<pre class="code"><code>.card {}
+.card__title {}
+.card--large {}</code></pre>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">S</div>
+
+                <h3>Sass / SCSS</h3>
+
+                <p>
+                    CSS yazımını daha düzenli hale getirmek için değişkenler,
+                    nesting ve benzeri özellikler kullanılabilir.
+                </p>
+
+<pre class="code"><code>$main-color: purple;
+
+.button {
+    color: $main-color;
+
+    &:hover {
+        opacity: .8;
+    }
+}</code></pre>
+
+            </div>
+
+        </div>
+
+        <div class="quote">
+            Düzenli isimlendirme ve yapılandırılmış CSS, büyük projelerin yönetilmesini kolaylaştırır.
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">CSS<span>.</span> Dünyası</div>
+        <p>BEM & Sass / SCSS</p>
+    </div>
+</footer>
+
+</body>
+</html>

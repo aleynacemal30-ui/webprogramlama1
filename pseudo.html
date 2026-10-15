@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes | CSS Dünyası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">CSS<span>.</span></a>
+
+    <ul class="navlinks">
+        <li><a href="css.html">CSS Nedir?</a></li>
+        <li><a href="anatomi.html">Anatomi</a></li>
+        <li><a href="box-model.html">Box Model</a></li>
+        <li><a href="layout.html">Flexbox / Grid</a></li>
+        <li><a href="responsive.html">Responsive</a></li>
+        <li><a href="renkler.html">Renkler</a></li>
+        <li><a href="pseudo.html">Pseudo</a></li>
+        <li><a href="modern.html">Modern</a></li>
+        <li><a href="animasyonlar.html">Animasyonlar</a></li>
+    </ul>
+
+    <a href="uygulama.html" class="nav-button">Laboratuvar →</a>
+</nav>
+
+<section class="hero">
+
+    <div class="container">
+
+        <a href="index.html" class="back">← Ana Sayfaya Dön</a>
+
+        <div class="eyebrow">07 / ETKİLEŞİM</div>
+
+        <h1>Pseudo-classes & Elements</h1>
+
+        <p class="lead">
+            Kullanıcının etkileşimlerine veya elementlerin belirli durumlarına göre stil değiştirebiliriz.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="hover-demo">
+
+            <h2>Butonun Üzerine Gel 👇</h2>
+
+            <button>Mouse ile Üzerime Gel</button>
+
+        </div>
+
+        <div class="demo">
+
+            <h2 class="demo-title">:hover Örneği</h2>
+
+<pre class="code"><code>button {
+    background: purple;
+}
+
+button:hover {
+    transform: scale(1.08);
+}</code></pre>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>:hover</h3>
+                <p>
+                    Kullanıcı mouse ile elementin üzerine geldiğinde uygulanır.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>:focus</h3>
+                <p>
+                    Bir form elementi odaklandığında kullanılabilir.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>:active</h3>
+                <p>
+                    Element aktif durumdayken stil uygulanmasını sağlar.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>::before</h3>
+                <p>
+                    Elementin içeriğinin öncesine görsel içerik eklemek için kullanılabilir.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">CSS<span>.</span> Dünyası</div>
+        <p>Pseudo Classes & Elements</p>
+    </div>
+</footer>
+
+</body>
+</html>

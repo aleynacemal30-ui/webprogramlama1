@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renkler ve Değişkenler | CSS Dünyası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">CSS<span>.</span></a>
+
+    <ul class="navlinks">
+        <li><a href="css.html">CSS Nedir?</a></li>
+        <li><a href="anatomi.html">Anatomi</a></li>
+        <li><a href="box-model.html">Box Model</a></li>
+        <li><a href="layout.html">Flexbox / Grid</a></li>
+        <li><a href="responsive.html">Responsive</a></li>
+        <li><a href="renkler.html">Renkler</a></li>
+        <li><a href="pseudo.html">Pseudo</a></li>
+        <li><a href="modern.html">Modern</a></li>
+        <li><a href="animasyonlar.html">Animasyonlar</a></li>
+    </ul>
+
+    <a href="uygulama.html" class="nav-button">Laboratuvar →</a>
+</nav>
+
+<section class="hero">
+    <div class="container">
+
+        <a href="index.html" class="back">← Ana Sayfaya Dön</a>
+
+        <div class="eyebrow">06 / GÖRSEL TASARIM</div>
+
+        <h1>Renkler & CSS Değişkenleri</h1>
+
+        <p class="lead">
+            CSS renkleri ve değişkenleri kullanarak tutarlı ve yönetilebilir tasarımlar oluşturabiliriz.
+        </p>
+
+    </div>
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="color-grid">
+
+            <div class="swatch color-one">
+                <strong>#7C5CFF</strong>
+                <span>Mor</span>
+            </div>
+
+            <div class="swatch color-two">
+                <strong>#24D6A3</strong>
+                <span>Yeşil</span>
+            </div>
+
+            <div class="swatch color-three">
+                <strong>#FF5C8A</strong>
+                <span>Pembe</span>
+            </div>
+
+            <div class="swatch color-four">
+                <strong>#FFB84D</strong>
+                <span>Turuncu</span>
+            </div>
+
+        </div>
+
+        <div class="demo">
+
+            <h2 class="demo-title">CSS Değişkenleri</h2>
+
+<pre class="code"><code>:root {
+    --main-color: #7c5cff;
+    --background: #0b1020;
+    --text: #ffffff;
+}
+
+.button {
+    background: var(--main-color);
+    color: var(--text);
+}</code></pre>
+
+        </div>
+
+        <div class="variable-demo">
+
+            <h2>Değişken Kullanımı</h2>
+
+            <p>
+                Aynı renk değerini birçok yerde tekrar yazmak yerine
+                CSS değişkeni tanımlayarak tekrar kullanabiliriz.
+            </p>
+
+            <button>CSS Variable</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">CSS<span>.</span> Dünyası</div>
+        <p>Renkler & CSS Değişkenleri</p>
+    </div>
+</footer>
+
+</body>
+</html>

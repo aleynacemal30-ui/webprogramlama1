@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model | CSS Dünyası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">CSS<span>.</span></a>
+
+    <ul class="navlinks">
+        <li><a href="css.html">CSS Nedir?</a></li>
+        <li><a href="anatomi.html">Anatomi</a></li>
+        <li><a href="box-model.html">Box Model</a></li>
+        <li><a href="layout.html">Flexbox / Grid</a></li>
+        <li><a href="responsive.html">Responsive</a></li>
+        <li><a href="renkler.html">Renkler</a></li>
+        <li><a href="pseudo.html">Pseudo</a></li>
+        <li><a href="modern.html">Modern</a></li>
+        <li><a href="animasyonlar.html">Animasyonlar</a></li>
+    </ul>
+
+    <a href="uygulama.html" class="nav-button">Laboratuvar →</a>
+</nav>
+
+<section class="hero">
+    <div class="container">
+
+        <a href="index.html" class="back">← Ana Sayfaya Dön</a>
+
+        <div class="eyebrow">03 / LAYOUT</div>
+
+        <h1>CSS Box Model</h1>
+
+        <p class="lead">
+            Her HTML elementi CSS açısından bir kutu olarak düşünülebilir.
+        </p>
+
+    </div>
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="box-model-wrapper">
+
+            <div class="box-margin">
+                <span>Margin</span>
+
+                <div class="box-border">
+                    <span>Border</span>
+
+                    <div class="box-padding">
+                        <span>Padding</span>
+
+                        <div class="box-content">
+                            CONTENT
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-icon">📦</div>
+                <h3>Content</h3>
+                <p>
+                    Kutunun içerisinde bulunan asıl içeriktir.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">↔</div>
+                <h3>Padding</h3>
+                <p>
+                    İçerik ile kenarlık arasındaki boşluktur.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">▣</div>
+                <h3>Border</h3>
+                <p>
+                    Elementin çevresinde bulunan kenarlıktır.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">↕</div>
+                <h3>Margin</h3>
+                <p>
+                    Elementin dışındaki boşluğu ifade eder.
+                </p>
+            </div>
+
+        </div>
+
+<pre class="code"><code>.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid;
+    margin: 30px;
+}</code></pre>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">CSS<span>.</span> Dünyası</div>
+        <p>CSS Box Model</p>
+    </div>
+</footer>
+
+</body>
+</html>

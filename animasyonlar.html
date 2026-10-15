@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasyonlar | CSS Dünyası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">CSS<span>.</span></a>
+
+    <ul class="navlinks">
+        <li><a href="css.html">CSS Nedir?</a></li>
+        <li><a href="anatomi.html">Anatomi</a></li>
+        <li><a href="box-model.html">Box Model</a></li>
+        <li><a href="layout.html">Flexbox / Grid</a></li>
+        <li><a href="responsive.html">Responsive</a></li>
+        <li><a href="renkler.html">Renkler</a></li>
+        <li><a href="pseudo.html">Pseudo</a></li>
+        <li><a href="modern.html">Modern</a></li>
+        <li><a href="animasyonlar.html">Animasyonlar</a></li>
+    </ul>
+
+    <a href="uygulama.html" class="nav-button">Laboratuvar →</a>
+</nav>
+
+<section class="hero">
+
+    <div class="container">
+
+        <a href="index.html" class="back">← Ana Sayfaya Dön</a>
+
+        <div class="eyebrow">10 / ANİMASYON</div>
+
+        <h1>Animasyonlar & Kütüphaneler</h1>
+
+        <p class="lead">
+            CSS animasyonları ile sayfalara hareket ve etkileşim kazandırabiliriz.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="anim-row">
+
+            <div class="anim-box">
+                CSS
+            </div>
+
+            <div class="pulse">
+                ●
+            </div>
+
+        </div>
+
+        <div class="demo">
+
+            <h2 class="demo-title">@keyframes Örneği</h2>
+
+<pre class="code"><code>@keyframes hareket {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200px);
+    }
+
+}
+
+.box {
+    animation:
+    hareket 2s infinite alternate;
+}</code></pre>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-icon">⚡</div>
+
+                <h3>CSS Animation</h3>
+
+                <p>
+                    Keyframes kullanılarak elementlerin zaman içerisinde
+                    farklı durumlara geçmesi sağlanabilir.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎯</div>
+
+                <h3>Transition</h3>
+
+                <p>
+                    Bir özellik değişirken daha yumuşak geçişler oluşturulabilir.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🧩</div>
+
+                <h3>Kütüphaneler</h3>
+
+                <p>
+                    Bootstrap ve Tailwind gibi araçlar web arayüzlerinin geliştirilmesinde kullanılabilir.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">CSS<span>.</span> Dünyası</div>
+        <p>Animasyonlar & Kütüphaneler</p>
+    </div>
+</footer>
+
+</body>
+</html>
